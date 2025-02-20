@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Elemental</title>
+        <script src="js/elemental.js" defer></script>
+        <!--link rel="stylesheet" href="css/estilos.css"-->
+    </head>
+    <body>
+        <h1>Elemental 🔥💧🌱</h1>
+
+        <section id="seleccionar-personaje">
+            <h2>Elige tu elemento:</h2>
+
+            <div>
+                <input id="fuego" type="radio" name="personaje">
+                <label for="fuego">Fuego 🔥</label>
+
+                <input id="agua" type="radio" name="personaje">
+                <label for="agua">Agua 💧</label>
+
+                <input id="tierra" type="radio" name="personaje">
+                <label for="tierra">Tierra 🌱</label>
+            </div>
+
+            <button id="boton-elemento">Seleccionar</button>
+        </section>
+        
+        <section id="seleccionar-ataque">
+            <h2>Elige tu ataque:</h2>
+
+            <div class="elemento-stats">
+                <p>Tu elemento <span id="elemento-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
+                <p>El elemento <span id="elemento-enemigo"></span> del enemigo tiene <span id="vidas-enemigo">3</span> vidas</p>
+            </div>
+
+            <div>
+                <button id="boton-pyro">Pyro 🔥</button>
+                <button id="boton-hydro">Hydro 💧</button>
+                <button id="boton-geo">Geo 🌱</button>
+            </div>
+        </section>
+
+        <section id="mensajes">
+            <!-- Los mensajes se agregarán aquí dinámicamente -->
+        </section>
+
+        <section id="reiniciar"> 
+            <button id="boton-reiniciar">Reiniciar</button>
+        </section>
+    </body>
+</html>
